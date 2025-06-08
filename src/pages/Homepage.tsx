@@ -79,7 +79,7 @@ const Homepage = () => {
             >
               <Link to="/projects">
                 <motion.button
-                  className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all duration-200 flex items-center space-x-2 group"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all duration-200 flex items-center space-x-2 group mx-auto"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -107,13 +107,6 @@ const Homepage = () => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer"
-            >
-              <ChevronDown className="h-8 w-8" />
-            </motion.div>
           </motion.div>
         </div>
       </section>
